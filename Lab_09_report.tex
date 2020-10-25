@@ -68,7 +68,10 @@
 
 \section*{Summary}
 
-Type the summary of your experiment and results here.  
+In this lab, we created a simple arithmetic logic unit (ALU) with an input register. The ALU needed two numbers to perform a mathematical operation, so we made the numbering using switches, and we had an input register store the numbers. The circuit we built that produced the top-level module is an example of regular sequential logic because it relies on time and past outputs, whereas combinational logic does not. The first step in this experiment was to build a register. The register took input and memorized the information on the positive edge of a clock change. The memorized input was then passed to the output Q. Next, we built an ALU, which is very similar to a multiplexer. The ALU accepted the Q and a number inputted via switches. Then, based on a set parameter, the ALU performed a mathematical operation between two numbers. The ALU output was then passed to a second register that stored the input during the positive edge of a clock change. At the end of this experiment, we used our Basys3 boards to verify our ALUs.
+
+When testing the register, we had to use the non-blocking technique because we tested sequential logic rather than combinational logic. Nonblocking does not assign elements procedurally, so it mimics hardware more accurately than blocking assignments in test benches. 
+
 
 
 \section*{Q\&A}
@@ -103,6 +106,7 @@ Type the summary of your experiment and results here.
 		\bottomrule
 	\end{tabular}
 \end{table*}
+\pagebreak
 
 
 \section*{Results}
@@ -118,11 +122,40 @@ Type the summary of your experiment and results here.
 \includegraphics[width=0.8\textwidth, trim= 28.5cm 16cm 68cm 5.5cm, clip]{alu_test.PNG}
 \label{fig:ALU Test Simulation}
 
+\pagebreak
 
 \item Top-Level Simulation 
 
 \includegraphics[width=0.8\textwidth, trim= 28.5cm 16cm 68cm 5.5cm, clip]{top_level_test.PNG}
 \label{fig:Top-Level Simulation }
+
+\item On Board Testing Step 1 
+\includegraphics[width=0.6\textwidth, angle=270]{Lab9.1.jpg} \centering
+\label{fig:On Board Testing Step 1 }
+
+\item On Board Testing Step 2 
+\includegraphics[width=0.6\textwidth, angle=270]{Lab9.2.jpg} \centering
+\label{fig:On Board testing Step 2}
+
+\item On Board Testing Step 3 
+\includegraphics[width=0.6\textwidth, angle=270]{Lab9.3.jpg} \centering
+\label{fig:On Board testing Step 3}
+
+\item On Board Testing Step 4 
+\includegraphics[width=0.6\textwidth, angle=270]{Lab9.4.jpg} \centering
+\label{fig:On Board testing Step 4}
+
+\item On Board Testing Step 5 
+\includegraphics[width=0.6\textwidth, angle=270]{Lab9.5.jpg} \centering
+\label{fig:On Board testing Step 5}
+
+\item On Board Testing Step 6 
+\includegraphics[width=0.7\textwidth, angle=270]{Lab9.6.jpg} \centering
+\label{fig:On Board testing Step 6}
+
+\item On Board Testing Step 7 
+\includegraphics[width=0.6\textwidth, angle=270]{Lab9.7.jpg} \centering
+\label{fig:On Board testing Step 7}
 
 \end{enumerate}
 
